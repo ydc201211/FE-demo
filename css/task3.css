@@ -1,0 +1,61 @@
+.wrap-content{
+    margin: 10px;
+    min-height: 600px;
+    max-height: 600px;
+    border: 1px solid #000;
+    background: lightgrey;
+    position: relative;
+}
+.left{
+    float: left;
+    padding: 20px;
+    position: absolute;
+    width: 160px;
+    background: #fff;
+    border: 1px solid #999;
+    margin: 20px;
+}
+
+.left img{
+    width: 80px;
+    height: 80px;
+}
+.left span{
+    vertical-align: top;
+}
+.middle{
+    background: #fff;
+    padding: 20px;
+    width: 70%;
+    background: #fff;
+    border: 1px solid #999;
+    margin: 20px 20px 100px 240px;
+}
+.minddle p{
+    text-indent: 2em;
+}
+.right{
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #999;
+    padding: 10px 20px;
+}
+
+.right img{
+    width: 100px;
+    height: 100px;
+}
+.right ul{
+    padding: 0px;
+    margin: 0px;
+}
+.right ul li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
