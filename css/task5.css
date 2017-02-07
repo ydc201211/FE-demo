@@ -1,0 +1,165 @@
+body,div,ul,p{
+ margin: 0;
+ padding: 0
+}
+h1,h2,h3,h4,h5,h6,p,li,label{
+    font-family: 'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial;
+}
+
+h3{
+    color:dimgray;
+}
+body{
+    background: darkgray;
+    min-width: 750px;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    
+}
+.header{
+    background: black;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+nav{
+    float: right;
+    padding: 20px 10px;
+}
+
+nav li{
+    float: left;
+    padding: 5px;
+    list-style: none;
+}
+.top-img{
+    position: absolute;
+    padding: 10px;
+}
+
+.block{
+    margin: 20px 500px 20px 20px;
+    background: #fff;
+    border: 1px solid lightslategray;
+    box-shadow: 3px 3px 3px dimgray;
+    padding: 10px 20px;
+    
+}
+
+.p1{
+    color: lightslategray;
+    font-weight: bold;
+    font-size: 13px;
+    text-indent: 0;
+}
+p{
+    text-indent: 2em;
+    line-height: 26px;
+    color:#000;
+    font-weight: normal;
+}
+.block1 li{
+    list-style: none;
+    border: 1px solid black;
+    margin: 10px 30px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+.p2{
+    text-indent: 0;
+}
+ol li{
+    font-weight: bold;
+    font-size: 14px;
+}
+table{
+    margin: 15px;
+	width: 96%;
+	border: 1px solid black;
+	border-spacing:0px;
+}
+table tr{
+	margin: 10px;
+}
+table th{
+	text-align: left;
+	color: white;
+	background-color:#0D0D0D;
+	padding: 5px;
+}
+table td{
+	padding: 5px;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+}
+table .row_3{
+    background: lightgrey;
+}
+.form{
+    padding: 10px 10px;
+}
+.form p{
+    color: lightgrey;
+}
+.input{
+    width: 400px;
+    display: flex;
+    margin: 10px 0px;
+}
+label{
+    flex: 1;
+    padding-right: 20px;
+    text-align: right;
+}
+.input input{
+    flex: 2;
+}
+.input p{
+    flex: 2;
+    text-indent: 0;
+}
+.other{
+    margin-top: 20px;
+}
+
+.select{
+    display: flex;
+    width: 400px;
+    margin: 10px 0px;
+}
+.input-right{
+    flex: 2;
+}
+.btn{
+    width: 100%;
+    margin: 10px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background: dodgerblue;
+    border: none;
+    border-radius: 6px;
+}
+footer{
+    height: 40px;
+    background: #000;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+aside{
+    float: right;
+   
+}
+.side-block{
+    margin: 20px 20px 20px 20px;
+    width: 400px;
+}
