@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 400px;
+    height: 200px;
+    background: #ccc;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.left-top{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -40px;
+    left: -40px;
+    background-color: #fc0;
+    border-radius: 40px;
+}
+.right-bottom{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    background-color: #fc0;
+    border-radius: 40px;
+}
+ @media (max-width: 400px) {
+    .main{
+        width: 100%;
+    }
+}
