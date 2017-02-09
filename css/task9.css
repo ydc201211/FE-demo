@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "SimHei","Microsoft Yahei","Arial";
+    background: #eeedec;
+}
+a{
+    text-decoration: none;
+    font-family: "SimHei","Microsoft Yahei","Arial";
+}
+header{
+    width: 100%;
+    height: 60px;
+    background: #2189bf;
+}
+header .logo{
+    display: inline-block;
+    position: relative;
+    left:200px;
+    top:15px;
+}
+header .nav-right{
+    float: right;
+    top:15px;
+    right: 150px;
+    position: relative;
+}
+header .nav-right input[type="text"]{
+    width: 300px;
+    line-height: 30px;
+    padding-left:30px;
+    background: #fff url(../img/task9/zoom.png) no-repeat 10px 6px;
+    background-image: 10px 10px;
+    border: 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+header .nav-right a{
+    margin-left: 20px;
+    background: url(../img/task9/login.png) no-repeat left;
+    background-size: 20px 20px;
+    padding-left: 25px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 25px;
+    color: #fff;
+    display: inline-block;
+}
+.section{
+    min-width: 1280px;
+    margin: 0 auto;
+    height: 1280px;
+}
+.section .menu{
+    float: left;
+    background: #2a2e3d;
+    width: 15%;
+    height: 1280px;
+}
+.section .main{
+    float: right;
+    height: 1280px;
+    width: 85%;
+}
+.section .main .crumbs{
+    background: #fff;
+    width: 100%;
+    height: 40px;
+    padding-left: 30px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.section .main .crumbs a{
+    display: inline-block;
+    color: #aaa;
+    text-decoration: none;
+}
+.section .main .crumbs a:last-child{
+    color: #2189bf;
+}
+.section .main .crumbs span{
+    padding: 10px;
+}
+.section .main .crumbs a:hover{
+    color: #2189bf;
+}
+.section .main .content{
+    padding: 30px 80px;
+    width: 100%;
+    height: 1240px;
+    box-sizing: border-box;
+}
+
+.section .main .content .section1{
+    height: 90px;
+    background: #fff;
+    border: 1px solid #dddfe1;
+    border-radius: 2px;
+}
+.section .main .content .section1 .select{
+    display: inline-block;
+    height: 90px;
+    background: lightpink;
+}
+.section .main .content .section1 .select1{
+    width: 20%;
+    
+}
+.section .main .content .section1 .select2{
+    width: 20%;
+}
+.section .main .content .section1 .select3{
+    width: 40%;
+}
+.section .main .content .section1 .search-btn{
+    width: 15%;
+}
