@@ -5,6 +5,7 @@
 body{
     font-family: "SimHei","Microsoft Yahei","Arial";
     background: #eeedec;
+    min-width: 1280px;
 }
 a{
     text-decoration: none;
@@ -48,23 +49,23 @@ header .nav-right a{
     color: #fff;
     display: inline-block;
 }
-.section{
+.center{
     min-width: 1280px;
     margin: 0 auto;
     height: 1280px;
 }
-.section .menu{
+.center .menu{
     float: left;
     background: #2a2e3d;
     width: 15%;
     height: 1280px;
 }
-.section .main{
+.center .main{
     float: right;
     height: 1280px;
     width: 85%;
 }
-.section .main .crumbs{
+.center .main .crumbs{
     background: #fff;
     width: 100%;
     height: 40px;
@@ -72,48 +73,126 @@ header .nav-right a{
     padding-top: 10px;
     box-sizing: border-box;
 }
-.section .main .crumbs a{
+.center .main .crumbs a{
     display: inline-block;
     color: #aaa;
     text-decoration: none;
 }
-.section .main .crumbs a:last-child{
+.center .main .crumbs a:last-child{
     color: #2189bf;
 }
-.section .main .crumbs span{
+.center .main .crumbs span{
     padding: 10px;
 }
-.section .main .crumbs a:hover{
+.center .main .crumbs a:hover{
     color: #2189bf;
 }
-.section .main .content{
+.center .main .content{
     padding: 30px 80px;
     width: 100%;
     height: 1240px;
     box-sizing: border-box;
+    font-size: 12px;
 }
 
-.section .main .content .section1{
+.center .main .content .section{
     height: 90px;
     background: #fff;
     border: 1px solid #dddfe1;
     border-radius: 2px;
+    padding-left: 30px;
+    margin-top: 15px;
 }
-.section .main .content .section1 .select{
+
+.center .main .content .section2{
+    border: 0;
+    /*background: transparent;*/
+}
+.center .main .content .section3{
+    border: 0;
+    /*background: transparent;*/
+}
+.center .main .content .section4{
+    border: 0;
+    /*background: transparent;*/
+}
+.no-border
+.h360{
+    height: 360px;
+}
+.center .main .content .section1 .select{
     display: inline-block;
     height: 90px;
-    background: lightpink;
+    padding: 10px; 
+    box-sizing: border-box;
+    float: left;
 }
-.section .main .content .section1 .select1{
-    width: 20%;
-    
-}
-.section .main .content .section1 .select2{
+.center .main .content .section1 .select1{
     width: 20%;
 }
-.section .main .content .section1 .select3{
-    width: 40%;
+.center .main .content .section1 .select2{
+    width: 30%;
 }
-.section .main .content .section1 .search-btn{
-    width: 15%;
+
+.center .main .content .section1 .select3{
+    width: 36%;
+}
+.center .main .content .section1 .search-btn{
+    width: 10%;
+}
+.center .main .content .section1 .select .query{
+    height: 25px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.center .main .content .section1 .select span{
+    color: #aaa;
+    padding-right: 10px;
+    box-sizing: border-box;
+    line-height: 26px;
+
+}
+.center .main .content .section1 .select2 div{
+    float: left;
+    width: 180px;
+}
+.center .main .content .section1 .select2 a{
+    color: #fff;
+    display: inline-block;
+    line-height: 54px;
+    width: 16px;
+    padding-left: 16px;
+    position: relative;
+    background: url(../img/task9/change.png) no-repeat center;
+}
+.center .main .content .section1 .select .query{
+    background: url(../img/task9/black_arrow.png) no-repeat 90% 10px;
+}
+.center .main .content .section1 .select .query-first{
+    background: url(../img/task9/blue_arrow.png) no-repeat 90% 10px;
+    width: 90px;   
+}
+.center .main .content .section1 .select .w120{
+    width: 140px;
+}
+.center .main .content .section1 .select .w80{
+    width: 100px;   
+}
+.center .main .content .section1 .search-btn input[type="submit"]{
+    background: #388ac1;
+    color: #fff;
+    border: 0;
+    width: 45px;
+    height: 25px;
+    position: relative;
+    top:20px;
+    font-weight:600;
+    border-radius: 3px;
+}
+.center .main .content .section1 .search-btn input[type="submit"]:hover{
+    background: #236b9b;
+}
+.center .main .content .section1 .select3 div{
+    width:340px;
 }
