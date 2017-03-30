@@ -440,7 +440,8 @@ header .up-right:hover .move{
     border-left: 0px;
 }
 .sec5 .sec5-right{
-    margin-left: 70%;
+    float: right;
+    width: 30%;
     height: 560px;
     text-align: center;
     position: relative;
@@ -573,7 +574,8 @@ header .up-right:hover .move{
 .sec6 .sec6-block3{
     background: url(../img/task7/pic08.jpg) no-repeat;
     background-size: cover;
-    margin-left: 70%;
+    width: 30%;
+    float: right;
     height: 520px;
 }
 .sec6 .block-top{

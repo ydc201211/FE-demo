@@ -106,7 +106,8 @@ header .nav-right a{
 
 .center .main .content .section2{
     border: 0;
-    /*background: transparent;*/
+    background: none;
+    padding-left: 0px;
 }
 .center .main .content .section3{
     border: 0;
@@ -196,3 +197,68 @@ header .nav-right a{
 .center .main .content .section1 .select3 div{
     width:340px;
 }
+.center .main .content .section2 .section2-1{
+    width: 90%;
+
+}
+.center .main .content .section2 .section2-1 .left-button{
+    width:30px;
+    height: 70px;
+    float: left;
+    margin-right: 6px;
+    text-align: center;
+    line-height: 70px;
+    background: #fff;
+   
+}
+.center .main .content .section2 .section2-1 .button:hover{
+    background: #ddd;
+}
+.center .main .content .section2 .section2-1 ul{
+    list-style: none;
+    float: left;
+}
+.center .main .content .section2 .section2-1 li:nth-child(1){
+    border-top: 3px solid #4388c9;
+}
+
+.center .main .content .section2 .section2-1 li:hover{
+    border-top: 3px solid #4388c9;
+}
+.center .main .content .section2 .section2-1 li{
+    float: left;
+    width: 110px;
+    height: 70px;
+    background: #fff;
+    margin-right: 6px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    
+}
+.center .main .content .section2 .section2-1 .right-button{
+    width:30px;
+    height: 70px;
+    float: left;
+    margin-right: 6px;
+    text-align: center;
+    line-height: 70px;
+    background: #fff;
+    
+}
+.box-border{
+    border: 1px solid #cacdd1;
+    border-right-color: #ebecee;
+    border-bottom-color: #ebecee;
+}
+.center .main .content .section2 .section2-2{
+    float: right;
+    width: 16%;
+    height: 70px;
+    background: #fff url(../img/task9/history.png) 18px 17px no-repeat;
+    box-sizing: border-box;
+    padding-left: 60px;
+    line-height: 70px;
+    color: #535353;
+    cursor: pointer;
+}
+
