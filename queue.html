@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div>
+            <input type="text" id="input" value="">
+            <span class="btns">
+                <button class="left-in">左侧入</button>
+                <button class="right-in">右侧入</button>
+                <button class="left-out">左侧出</button>
+                <button class="right-out">右侧出</button> 
+            </span>
+        </div>
+        <div class="node">
+        </div>
+    </body>
+    <script>
+        (function(){
+
+            document.addEventListener("DOMContentLoaded",init);
+            function init(){
+                var btns = document.getElementsByClassName("btns")[0];
+                var input = document.getElementById("input");
+                btns.addEventListener("click",function(event){
+                    var _this = event.target;
+                    if((/^[0-9]+$/).test(input.value)){
+                        if(/left-in/g.test(_this.className)){
+                            queue.leftIn(input.value);
+                        }else if(/left-out/g.test(_this.className)){
+                            queue.leftOut();
+                        }else if(/right-in/g.test(_this.className)){
+                            queue.rightIn(input.value);
+                        }else{
+                            queue.rightOut();
+                        }
+                    }else{
+                        alert("输入错误!");
+                    }
+                });
+            }
+
+            function each(arr,callback){
+                for(var i = 0; i < arr.length; i++){
+                    callback(arr[i]);
+                }
+            }
+
+            var queue = {
+                str: [],
+                leftIn: function(num){
+                    this.str.unshift(num);
+                    this.paint();
+                },
+                rightIn: function(num){
+                    this.str.push(num);
+                    this.paint();
+                },
+                leftOut: function(){
+                    if(this.isEmpty()){
+                        alert("队列已为空!");
+                    }else{
+                        var a = this.str.shift();
+                        this.paint();
+                        alert(a);
+                    }
+                },
+                rightOut:function(){
+                    if(this.isEmpty()){
+                        alert("队列已为空!");
+                    }else{
+                        var a = this.str.pop();
+                        this.paint();
+                        alert(a);
+                    }
+                },
+                paint:function(){
+                    var nodeStr = "";
+                    each(this.str,function(item){
+                        nodeStr += "<div class='nodeSub' id="+ item +">"+ item +"</div>";
+                    });
+                    var node = document.getElementsByClassName("node")[0];
+                    node.innerHTML = nodeStr;
+                    addEventListenerToDiv(this.str,node);
+                },
+                isEmpty: function(){
+                    return (this.str.length === 0);
+                },
+               
+                deleteDiv:function(key){
+                    console.log(key);
+                    this.str.splice(key,1);
+                    this.paint();
+                }
+            };
+
+            // function addEventListenerToDiv(str,node){
+            //     node.addEventListener("click",function(event){
+            //         var _this = event.target;
+            //         if(_this.)
+            //         console.log(_this.id);
+            //         // queue.deleteDiv(str.indexOf(_this.id));
+            //         event.stopPropagation(); 
+
+            //     });
+            // }
+            function addEventListenerToDiv(str,node){
+                 for (var cur = 0; cur < node.childNodes.length; cur++) {
+                    addEvent(node.childNodes[cur], "click", function(cur) {
+                        return function(){queue.deleteDiv(cur)};
+                    }(cur));
+                }
+            }
+
+            function addEvent(element, event, listener) {
+                if (element.addEventListener) {
+                    element.addEventListener(event, listener, false);
+                }
+                else if (element.attachEvent) {
+                    element.attachEvent("on" + event, listener);
+                }
+                else {
+                    element["on" + event] = listener;
+                }
+            }
+
+        })();
+    </script>
+    <style>
+        .nodeSub{
+            float: left;
+            padding: 20px;
+            background: red;
+            text-align: center;
+            line-height: 20px;
+        }
+    </style>
+</html>
